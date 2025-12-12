@@ -1,13 +1,24 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>wel-potal-ad</title>
-    <script type="module" crossorigin src="/web_test-ad/assets/index-DQWcmYbt.js"></script>
-    <link rel="stylesheet" crossorigin href="/web_test-ad/assets/index-DtICOu30.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>wel-potal-ad</title>
+<script type="text/javascript">
+    // GitHub Pages SPA 리다이렉션
+    // base가 /web_test-ad/ 이므로 pathSegmentsToKeep = 1
+    var pathSegmentsToKeep = 1;
+    
+    var l = window.location;
+    l.replace(
+    l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+    l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+    l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+    (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+    l.hash
+    );
+</script>
+</head>
+<body>
+</body>
 </html>
+
